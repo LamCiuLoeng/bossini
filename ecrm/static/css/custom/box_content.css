@@ -1,0 +1,126 @@
+/* - - - - - - CSS Document - - - - - - - - -
+
+Title : Global style sheet for client-side web development
+Author : Cody Lindley 
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+
+
+/* ----- head tags ----- */
+
+
+#pageContent{
+margin:10px auto;
+width:95%;
+height:95%;
+}
+
+/* tabs */
+#pageContent .anchors {
+    list-style: none;
+    margin:0 0 0 10px;
+}
+
+#pageContent .anchors li {
+font-family:Arial, Helvetica, sans-serif;
+    float: left;
+    margin: 0 2px 0 0;
+}
+
+#pageContent .anchors a {
+font-family:Arial, Helvetica, sans-serif;
+color:#ffffff !important;
+    display: block;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+	background: #6BAFE3;
+	border-top:2px solid #fff;
+	font-size:16px;
+}
+
+#pageContent .anchors .on a {
+	font-weight:bold;
+	border-bottom:2px solid #005697;
+	border-top:2px solid #970F00;
+}
+
+
+#pageContent .anchors .on a, #pageContent .anchors .on a:hover,#pageContent  .anchor, .anchors a:focus,#pageContent  .anchors a:active {
+	background: #005697;
+	border-top:2px solid #005697;
+	outline: none; /* @ Firefox 1.5, remove ugly dotted border */
+	overflow:hidden;
+}
+
+
+#pageContent .anchors a:hover{
+font-family:Arial, Helvetica, sans-serif;
+	color:#ffffff ;
+	background: #F8D617;
+	border-top:2px solid #F8D617;
+}
+
+
+#pageContent .anchors .on a:link,#pageContent  .anchors .on a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+#pageContent .anchors a:hover,#pageContent  .anchors a:focus,#pageContent  .anchors a:active {
+    cursor: pointer;
+}
+#pageContent .anchor {
+	clear:both;
+	display:none;
+	margin-bottom:20px;
+	width:100%;
+	color:#FFFFFF;
+	text-align:left;
+}
+
+#pageContent .anchor p {
+text-align:left;
+padding:5px 15px 15px 15px;
+font-size:1.5em;
+color:#FFFFFF;
+}
+
+#pageContent .case-list-one {
+    width:100%;
+	margin:10px 0px 15px 0px;
+
+ 	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 20px;
+	color: #ffffff;
+	text-decoration: none;
+}
+#pageContent  .case-list-one ul{
+ float:left;
+ width:95%;
+ padding-left:0px;
+ border-top:#eee solid 1px;
+ border-bottom:#eee solid 1px;
+ border-left:#eee solid 1px;
+ border-right:#eee solid 1px;
+ margin-top:0px;
+ margin-bottom:5px;
+ margin-left:10px;
+ margin-right:0px;
+}
+#pageContent .case-list-one ul li{
+float:left;
+
+	padding-left:15px;
+	margin:0px;
+	list-style:none;
+
+
+}
+#pageContent .case-list-one ul li.label{
+text-align:right;
+padding-right:30px;
+ width:100px;
+	background-color:#ffffff;
+	font-weight: bold;
+	color:#000;
+}

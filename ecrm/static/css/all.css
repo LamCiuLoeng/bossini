@@ -1,0 +1,26 @@
+#pageLogin
+{
+    font-size: 12px;
+    font-family: verdana;
+    text-align: right;
+}
+
+#footer {
+    background-color:#336699;
+    clear:both;
+    color:#FFFFFF;
+    font-size:10px;
+    margin-top:20px;
+    padding:5px;
+    font-family: verdana;
+    text-align: right;
+}
+
+.content_container{
+    margin:0 0 1.2em;
+    width:100%;
+}
+
+img {
+    border:0 none;
+}

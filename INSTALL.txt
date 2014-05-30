@@ -1,0 +1,12 @@
+1.install python
+2.easy_install
+3.tgsetup.py (tg1)
+4.check out project from svn
+5.install SQLObject
+6.install pywin32-py2.5
+7.install psycopg
+8.install cx_Oracl
+9.copy soldapprovider.py to python HOME/lib/site-packages/..
+10.append "soldapprovider = turbogears.identity.soldapprovider:SoLdapIdentityProvider" on dir-
+"C:\Python25\Lib\site-packages\TurboGears-1.0.7-py2.5.egg\EGG-INFO\entry_points.txt"
+11.install ldap

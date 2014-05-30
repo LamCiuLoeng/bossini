@@ -1,0 +1,51 @@
+.grid {
+    background-color:#E3E3E3;
+    border:medium none;
+    font-family:verdana,sans-serif;
+    font-size:12px;
+    width:960px;
+}
+
+
+.grid td {
+    padding:0px 3px 0px 3px;
+}
+
+.grid thead tr th {
+    padding: 1px 5px 1px 5px;
+    background-color: #006699;
+    color: white;
+}
+
+.grid thead tr td {
+    padding: 2px;
+}
+
+
+#status_block {
+ float: left;
+}
+
+
+.grid thead tr td a {
+    font-weight:bold;
+    text-decoration:underline;
+    color: #336699;
+}
+
+.grid tbody tr td a {
+    color:#336699;
+    text-decoration:underline;
+}
+
+.grid tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.singleselectfield{
+/*
+    margin-top :4px;
+    margin-bottom :4px;
+*/
+    width : 250px;
+}

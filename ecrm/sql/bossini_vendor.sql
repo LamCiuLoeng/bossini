@@ -1,0 +1,12 @@
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (1, 'FNI', 'FNI', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (2, 'GD', 'GD', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (3, 'HC', 'HC', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (12, 'WY', 'WY', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (7, 'TPL', 'TPL', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (5, 'KFO', 'KFO', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (4, 'JS', 'JS', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (8, 'TR', 'TR', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (9, 'TX', 'TX', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (10, 'WJ', 'WJ', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (11, 'WM', 'WM', NULL, NULL, NULL, NULL, NULL, 1);
+INSERT INTO "bossini_vendor" ("id", "vendor_code", "vendor_name", "erp_code", "description", "history", "create_date", "issued_by_id", "active") VALUES (6, 'LWF', 'LWF', NULL, NULL, NULL, NULL, NULL, 1);

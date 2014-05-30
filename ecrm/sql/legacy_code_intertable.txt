@@ -1,0 +1,25 @@
+CREATE TABLE bossini_legacy_function
+(
+  legacy_id integer NOT NULL,
+  function_id integer NOT NULL
+)
+WITH (OIDS=FALSE);
+ALTER TABLE bossini_legacy_function OWNER TO postgres;
+
+
+CREATE TABLE bossini_legacy_style
+(
+  legacy_id integer NOT NULL,
+  style_id integer NOT NULL
+)
+WITH (OIDS=FALSE);
+ALTER TABLE bossini_legacy_style OWNER TO postgres;
+
+
+CREATE TABLE bossini_legacy_downjacket
+(
+  legacy_id integer NOT NULL,
+  downjacket_id integer NOT NULL
+)
+WITH (OIDS=FALSE);
+ALTER TABLE bossini_legacy_downjacket OWNER TO postgres;

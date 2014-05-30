@@ -1,0 +1,112 @@
+div,form,img,ul,ol,dl,dt,dd,p,button {margin:0; padding:0; border:0;}
+li{margin:0;padding:0;list-style:none; float:left;}
+
+
+.dif-div {
+    border:#ccc 1px solid;
+    width:400px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 20px;
+	padding:10px 10px 10px 10px;
+	*padding:10px 10px 0px 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+
+}
+.dif-div .clear{
+margin:0; padding:0; border:0;
+clear:both;
+}
+.dif-div label {
+float:left;
+	background-color:#7AB2C4;
+	font-weight: bold;
+	height:20px;
+	width:120px;
+	padding-left:10px;
+	color:#FFFFFF;
+	line-height:20px;
+ }
+.dif-div span {
+    float:left;
+	width:200px;
+	padding-left:10px;
+	line-height:20px;
+}
+
+
+.dif-div ul{
+float:left;
+*margin-bottom:0px;
+*padding-bottom:0px;
+}
+.dif-div ul li{
+float:left;
+border:#eee solid 1px;
+margin-bottom:2px;
+
+	
+}
+
+.dif-div .in-one {
+float:left;
+width:380px;
+padding-bottom:5px;
+margin-left:20px;
+*margin-left:10px;
+margin-top:5px;
+}
+.dif-div .in-one li {
+float:left;
+border:#eee solid 1px;
+
+
+}
+
+.dif-div .in-one li label {
+float:left;
+	background-color:#AED0DB;
+	font-weight: bold;
+	height:20px;
+	width:120px;
+	padding-left:10px;
+	color:#222;
+	
+ }
+.dif-div .in-one li span {
+    float:left;
+	padding-left:10px;
+}
+
+
+
+.dif-div .in-two{
+float:left;
+padding-bottom:5px;
+width:350px;
+margin-left:20px;
+*margin-left:10px;
+margin-top:5px;
+}
+.dif-div .in-two li{
+float:left;
+border:#eee solid 1px;
+
+
+}
+
+.dif-div .in-two li label {
+float:left;
+	background-color:#CFE3E9;
+	font-weight: bold;
+	height:20px;
+	width:120px;
+	padding-left:10px;
+	color:#555555;
+ }
+.dif-div .in-two li span {
+    float:left;
+	padding-left:10px;
+}

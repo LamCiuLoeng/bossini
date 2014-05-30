@@ -1,0 +1,456 @@
+SELECT setval('public.tg_group_id_seq1', 29, true);
+
+ALTER TABLE bossini_item ADD COLUMN grouping integer DEFAULT 1;
+ALTER TABLE bossini_origin ADD COLUMN ukrainian character varying(100);
+ALTER TABLE bossini_origin ADD COLUMN portuguese character varying(100);
+ALTER TABLE bossini_fiber_content ADD COLUMN ukrainian character varying(100);
+ALTER TABLE bossini_fiber_content ADD COLUMN portuguese character varying(100);
+
+-- add group
+insert into tg_group(group_name,created) values('FS','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('PK','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('CT','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('CV','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('CHT','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('DX','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('ED','2010-09-28 12:52:55');
+--insert into tg_group(group_name,created) values('FK','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('FLJ','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('GM','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('LG','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('SKY','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('SNC','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('WLL','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('IP','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('LT','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('SNK','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('EG','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('KPF','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('ST','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('LPS','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('TJ','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('TK','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('BS','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('TG','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('SUN','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('HSU','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('CS','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('RT','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('SXL','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('WTC','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('WPS','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('AL','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('BJ','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('HKU','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('SNY','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('KL','2010-09-28 12:52:55');
+insert into tg_group(group_name,created) values('YK','2010-09-28 12:52:55');
+
+
+
+--add user
+insert into tg_user(user_name,password,display_name,created) values('CTUSER','CT6658','CTUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('CVUSER','CV7723','CVUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('DXUSER','DX5524','DXUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('EDUSER','ED2231','EDUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('FLJUSER','FLJ5563','FLJUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('GMUSER','GM1245','GMUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('LGUSER','LG6684','LGUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('SKYUSER','SYK4421','SKYUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('WLLUSER','WLL2346','WLLUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('IPUSER','IP5948','IPUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('LTUSER','LT4895','LTUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('SNKUSER','SNK5093','SNKUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('FSUSER','FS3359','FSUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('PKUSER','PK1195','PKUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('EGUSER','EG2563','EGUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('KPFUSER','KPF9834','KPFUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('LPSUSER','LPS5639','LPSUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('YKUSER','YK4523','YKUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('TKUSER','TK9890','TKUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('BSUSER','BS1467','BSUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('SUNUSER','SUN5782','SUNUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('HSUUSER','HSU8092','HSUUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('CSUSER','CS7598','CSUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('RTUSER','RT4376','RTUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('SXLUSER','SXL8639','SXLUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('WTCUSER','WK1097','WTCUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('WPSUSER','WPS3359','WPSUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('BJUSER','BJ5983','BJUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('HKUUSER','HKU3541','HKUUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('SNYUSER','SNY2559','SNYUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('KLUSER','KL9274','KLUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('TJUSER','TJ1560','TJUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('STUSER','ST3350','STUSER','2010-09-28 21:16:52');
+insert into tg_user(user_name,password,display_name,created) values('TGUSER','TG4811','TGUSER','2010-09-28 21:16:52');
+
+
+-- add user_group
+insert into user_group(group_id,user_id) values (6,91);
+insert into user_group(group_id,user_id) values (6,92);
+insert into user_group(group_id,user_id) values (6,93);
+insert into user_group(group_id,user_id) values (6,94);
+insert into user_group(group_id,user_id) values (6,95);
+insert into user_group(group_id,user_id) values (6,96);
+insert into user_group(group_id,user_id) values (6,97);
+insert into user_group(group_id,user_id) values (6,98);
+insert into user_group(group_id,user_id) values (6,99);
+insert into user_group(group_id,user_id) values (6,100);
+insert into user_group(group_id,user_id) values (6,101);
+insert into user_group(group_id,user_id) values (6,102);
+insert into user_group(group_id,user_id) values (6,103);
+insert into user_group(group_id,user_id) values (6,104);
+insert into user_group(group_id,user_id) values (6,105);
+insert into user_group(group_id,user_id) values (6,106);
+insert into user_group(group_id,user_id) values (6,107);
+insert into user_group(group_id,user_id) values (6,108);
+insert into user_group(group_id,user_id) values (6,109);
+insert into user_group(group_id,user_id) values (6,110);
+insert into user_group(group_id,user_id) values (6,111);
+insert into user_group(group_id,user_id) values (6,112);
+insert into user_group(group_id,user_id) values (6,113);
+insert into user_group(group_id,user_id) values (6,114);
+insert into user_group(group_id,user_id) values (6,115);
+insert into user_group(group_id,user_id) values (6,116);
+insert into user_group(group_id,user_id) values (6,117);
+insert into user_group(group_id,user_id) values (6,118);
+insert into user_group(group_id,user_id) values (6,119);
+insert into user_group(group_id,user_id) values (6,120);
+insert into user_group(group_id,user_id) values (6,121);
+insert into user_group(group_id,user_id) values (6,122);
+insert into user_group(group_id,user_id) values (6,123);
+insert into user_group(group_id,user_id) values (6,124);
+
+
+-- update fiber content and orign
+update bossini_origin set ukrainian='Вироблено у Китаї', portuguese='FABRICADO NA CHINA' where id=1;
+update bossini_origin set ukrainian='Вироблено у Гонг-Конгу', portuguese='FABRICADO EM HONG KONG' where id=2;
+update bossini_origin set ukrainian='Вироблено в Макао', portuguese='FABRICADO EM MACAU' where id=3;
+update bossini_origin set ukrainian='Вироблено у В''єтнамі', portuguese='FABRICADO NO VIETNAME' where id=4;
+update bossini_origin set ukrainian='Вироблено в Тайланді', portuguese='FABRICADO NA TAILANDIA' where id=5;
+
+update bossini_fiber_content set ukrainian='ацетат', portuguese='ACETATO' where id=1; 
+update bossini_fiber_content set ukrainian='акрил', portuguese='ACRILICO' where id=2;
+update bossini_fiber_content set ukrainian='вовна альпаки', portuguese='ALPACA' where id=3;
+update bossini_fiber_content set ukrainian='ангора', portuguese='ANGORA' where id=4;
+update bossini_fiber_content set ukrainian='кашемір', portuguese='CAXEMIRA' where id=5;
+update bossini_fiber_content set ukrainian='бавовна', portuguese='ALGODÃO' where id=6;
+update bossini_fiber_content set ukrainian='пух', portuguese='DOWN' where id=7;
+update bossini_fiber_content set ukrainian='еластан', portuguese='ELASTANO' where id=8;
+update bossini_fiber_content set ukrainian='перо', portuguese='PLUMA' where id=9;
+update bossini_fiber_content set ukrainian='овеча вовна', portuguese='LÂ DE CARNEIRO' where id=10;
+update bossini_fiber_content set ukrainian='лляної', portuguese='LINHO' where id=11;
+update bossini_fiber_content set ukrainian='лляної', portuguese='LINHO' where id=12;
+update bossini_fiber_content set ukrainian='лляної', portuguese='LINHO' where id=13;
+update bossini_fiber_content set ukrainian='люрекс', portuguese='LUREX' where id=14;
+update bossini_fiber_content set ukrainian='лайкра', portuguese='LYCRA' where id=15;
+update bossini_fiber_content set ukrainian='металізована тканина', portuguese='FIBRA METALIZADA' where id=16;
+update bossini_fiber_content set ukrainian='металізована тканина', portuguese='FIBRA DE METAL' where id=17;
+update bossini_fiber_content set ukrainian='модал', portuguese='MODAL' where id=18;
+update bossini_fiber_content set ukrainian='мохер', portuguese='MOHAIR' where id=19;
+update bossini_fiber_content set ukrainian='нейлон', portuguese='NYLON' where id=20;
+update bossini_fiber_content set ukrainian='інший матеріал', portuguese='OUTRAS FIBRAS' where id=21;
+update bossini_fiber_content set ukrainian='поліамід', portuguese='POLIAMIDA' where id=22;
+update bossini_fiber_content set ukrainian='поліестер', portuguese='POLIESTER' where id=23;
+update bossini_fiber_content set ukrainian='ПВХ', portuguese='PVC' where id=24;
+update bossini_fiber_content set ukrainian='тканина з рами', portuguese='RAMI' where id=25;
+update bossini_fiber_content set ukrainian='шовк', portuguese='SEDA' where id=26;
+update bossini_fiber_content set ukrainian='шовк', portuguese='SEDA' where id=27;
+update bossini_fiber_content set ukrainian='віскоза', portuguese='VISCOSE' where id=28;
+update bossini_fiber_content set ukrainian='вовна', portuguese='LÂ' where id=29;
+update bossini_fiber_content set ukrainian='хутро кролика', portuguese='PELE DE COELHO' where id=30;
+update bossini_fiber_content set ukrainian='хутро', portuguese='PELE' where id=31;
+update bossini_fiber_content set ukrainian='хутро єнота', portuguese='PELE DE GUAXINIM' where id=32;
+update bossini_fiber_content set ukrainian='хутро лисиці', portuguese='PELE DE RAPOSA' where id=33;
+update bossini_fiber_content set ukrainian='ШКІРА', portuguese='COURO' where id=34;
+update bossini_fiber_content set ukrainian='солом''яна папір', portuguese='PAPEL PALHA' where id=35;
+update bossini_fiber_content set ukrainian='Ліоцелл', portuguese='LYOCELL' where id=36;
+update bossini_fiber_content set ukrainian='Модакріл', portuguese='MODRACRILICO' where id=37;
+update bossini_fiber_content set ukrainian='Солома кукурудзи', portuguese='PALHA DE MILHO' where id=38;
+update bossini_fiber_content set ukrainian='поліпропілен', portuguese='POLIPROPILENO' where id=39;
+update bossini_fiber_content set ukrainian='поліуретан', portuguese='POLIURETANO' where id=40;
+update bossini_fiber_content set ukrainian='віскоза', portuguese='RAYON' where id=41;
+update bossini_fiber_content set ukrainian='металізована тканина', portuguese='FIBRA METALIZADA' where id=42;
+insert into bossini_fiber_content (china,hksinex_p,tw_n,egypt,romanian,poland,russia,japanese,french,germany,spanish,italian,status,indonesia,ukrainian,portuguese) values('羊毛皮','MONGOLIA FUR','羊毛皮','فراء مغولي','BLANA MONGOLIA','Mongolia futro','Монгольский мех','モンゴルの毛皮','Fourrure de la Mongolie','mongolische fell','Piel de Mongolia','Pelliccia della Mongolia',0,'Bulu Mongolia','Монгольська хутро','PELE DE MONGOLIA');		
+
+
+
+
+-- add item 
+update bossini_item set active=1 where item_type = 'H' or item_type = 'W';
+
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL661807','个',0.0734,0.0844,0,'WOV','M','02WL661807','02WL661807',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL661907','个',0.0889,0.1022,0,'WOV','M','02WL661907','02WL661907',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL662007','个',0.1479,0.17,0,'WOV','M','02WL662007','02WL662007',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL662107','个',0.116,0.1333,0,'WOV','M','02WL662107','02WL662107',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL662207','个',0.1354,0.1556,0,'WOV','M','02WL662207','02WL662207',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL662507','个',0.0638,0.0733,0,'WOV','S','02WL662507','02WL662507',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL625207','个',0.087,0.1,0,'WOV','M','02WL625207','02WL625207',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL625507','个',0.0965,0.1109,0,'WOV','M','02WL625507','02WL625507',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL625407','个',0.1804,0.2073,0,'WOV','M','02WL625407','02WL625407',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL625307','个',0.1546,0.1777,0,'WOV','M','02WL625307','02WL625307',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL625707','个',0.0951,0.1093,0,'WOV','S','02WL625707','02WL625707',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL624407','个',0.087,0.1,0,'WOV','M','02WL624407','02WL624407',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL624707','个',0.0965,0.1109,0,'WOV','M','02WL624707','02WL624707',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL624507','个',0.1804,0.2073,0,'WOV','M','02WL624507','02WL624507',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL624607','个',0.2032,0.2336,0,'WOV','M','02WL624607','02WL624607',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('02WL624907','个',0.0951,0.1093,0,'WOV','S','02WL624907','02WL624907',2);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06PL749109 COMBO A','个',0.29,0.3333,0,'WOV','M','06PL749109 COMBO A','06PL749109 COMBO A',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06PL749109 COMBO B','个',0.29,0.3333,0,'WOV','M','06PL749109 COMBO B','06PL749109 COMBO B',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('09PL750909 COMBO A','个',0.1949,0.224,0,'WOV','M','09PL750909 COMBO A','09PL750909 COMBO A',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('09PL750909 COMBO B','个',0.1949,0.224,0,'WOV','M','09PL750909 COMBO B','09PL750909 COMBO B',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06PL749309 COMBO A','个',0.147,0.169,0,'WOV','S','06PL749309 COMBO A','06PL749309 COMBO A',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06PL749309 COMBO B','个',0.147,0.169,0,'WOV','S','06PL749309 COMBO B','06PL749309 COMBO B',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06PL749509 COMBO A','个',0.147,0.169,0,'WOV','S','06PL749509 COMBO A','06PL749509 COMBO A',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01WL806411','个',0.105,0.103,0,'WOV','M','01WL806411','01WL806411',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01WL806511','个',0.19,0.185,0,'WOV','M','01WL806511','01WL806511',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80141101','个',0.0359,0.0413,0,'H','','01BC80141101','01BC80141101',0);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80141103','个',0.0359,0.0413,0,'H','','01BC80141103','01BC80141103',0);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80141104','个',0.0359,0.0413,0,'H','','01BC80141104','01BC80141104',0);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80141199','个',0.0359,0.0413,0,'H','','01BC80141199','01BC80141199',0);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('03BC80161101','个',0.0486,0.0559,0,'H','','03BC80161101','03BC80161101',3);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('03BC80161103','个',0.0486,0.0559,0,'H','','03BC80161103','03BC80161103',3);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('03BC80161104','个',0.0486,0.0559,0,'H','','03BC80161104','03BC80161104',3);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('03BC80161199','个',0.0486,0.0559,0,'H','','03BC80161199','03BC80161199',3);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('08BC80171101','个',0.0486,0.0559,0,'H','','08BC80171101','08BC80171101',5);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('08BC80171103','个',0.0486,0.0559,0,'H','','08BC80171103','08BC80171103',5);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('08BC80171104','个',0.0486,0.0559,0,'H','','08BC80171104','08BC80171104',5);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('08BC80171199','个',0.0486,0.0559,0,'H','','08BC80171199','08BC80171199',5);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80181101','个',0.0394,0.0453,0,'H','','01BC80181101','01BC80181101',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80181103','个',0.0394,0.0453,0,'H','','01BC80181103','01BC80181103',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80181104','个',0.0394,0.0453,0,'H','','01BC80181104','01BC80181104',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80181199','个',0.0394,0.0453,0,'H','','01BC80181199','01BC80181199',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80191102','个',0.0658,0.0756,0,'H','','01BC80191102','01BC80191102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80201102','个',0.0658,0.0756,0,'H','','01BC80201102','01BC80201102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80211102','个',0.0658,0.0756,0,'H','','01BC80211102','01BC80211102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80221102','个',0.0736,0.0846,0,'ST','','01BC80221102','01BC80221102',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80231102','个',0.0658,0.0756,0,'H','','01BC80231102','01BC80231102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80241102','个',0.0658,0.0756,0,'H','','01BC80241102','01BC80241102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80251102','个',0.0658,0.0756,0,'H','','01BC80251102','01BC80251102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80261102','个',0.0658,0.0756,0,'H','','01BC80261102','01BC80261102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80271102','个',0.0658,0.0756,0,'H','','01BC80271102','01BC80271102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80281102','个',0.0658,0.0756,0,'H','','01BC80281102','01BC80281102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80291102','个',0.0658,0.0756,0,'H','','01BC80291102','01BC80291102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80301102','个',0.0658,0.0756,0,'H','','01BC80301102','01BC80301102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80311102','个',0.0658,0.0756,0,'H','','01BC80311102','01BC80311102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80321102','个',0.0658,0.0756,0,'H','','01BC80321102','01BC80321102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80331102','个',0.0658,0.0756,0,'H','','01BC80331102','01BC80331102',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75620902','个',0.0658,0.0756,0,'H','','06BC75620902','06BC75620902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75630902','个',0.0658,0.0756,0,'H','','06BC75630902','06BC75630902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75640902','个',0.0658,0.0756,0,'H','','06BC75640902','06BC75640902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('09HT75140901','个',0.309,0.355,0,'ST','','09HT75140901','09HT75140901',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('09BC75750902','个',0.0736,0.0846,0,'ST','','09BC75750902','09BC75750902',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75760902','个',0.0658,0.0756,0,'H','','06BC75760902','06BC75760902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75770902','个',0.0658,0.0756,0,'H','','06BC75770902','06BC75770902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75780902','个',0.0658,0.0756,0,'H','','06BC75780902','06BC75780902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75790902','个',0.0658,0.0756,0,'H','','06BC75790902','06BC75790902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75800902','个',0.0658,0.0756,0,'H','','06BC75800902','06BC75800902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75810902','个',0.0658,0.0756,0,'H','','06BC75810902','06BC75810902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75820902','个',0.0658,0.0756,0,'H','','06BC75820902','06BC75820902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC75830902','个',0.0658,0.0756,0,'H','','06BC75830902','06BC75830902',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01HT80611101','个',0.05264,0.0605,0,'W','','01HT80611101','01HT80611101',0);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01HT80621101','个',0.05264,0.0605,0,'W','','01HT80621101','01HT80621101',0);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01HT80631101','个',0.05264,0.0605,0,'W','','01HT80631101','01HT80631101',0);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06BC79641002','个',0.0658,0.0756,0,'H','','06BC79641002','06BC79641002',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('01BC80601199','个',0.0359,0.0413,0,'H','','01BC80601199','01BC80601199',9);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06PL758809 COMBO A','个',0.16,0.18,0,'WOV','M','06PL758809 COMBO A','06PL758809 COMBO A',7);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,label_type,display,img,grouping) values('06PL758809 COMBO B','个',0.16,0.18,0,'WOV','M','06PL758809 COMBO B','06PL758809 COMBO B',7);
+
+
+
+-- add vendor
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('FS','FS',1,'dgwsh@dgfourseas.net; dgwlh@dgfourseas.net','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('PK','PK',1,'sara@paklayton.com.hk; ares@paklayton.com.hk; xia@paklayton.com.hk','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('CT','CT',1,'xiu@dchongxing.com','ella.xu@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('CV','CV',1,'toby@candv.com.hk','ella.xu@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('CHT','CHT',1,'','ella.xu@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('DX','DX',1,'xiewengang@xyhzy.com','ella.xu@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('ED','ED',1,'carol@endeavour.com.hk','ella.xu@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('FLJ','FLJ',1,'hefyhe@126.com; jiangli2009@21cn.com','ella.xu@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('GM','GM',1,'yoko@chuntat.com.cn','ella.xu@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('LG','LG',1,'vicky@longest.com.hk','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('SKY','SKY',1,'ling20001203@126.com','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('SNC','SNC',1,'','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('WLL','WLL',1,'sking@greatyear-gmt.com','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('IP','IP',1,'connie@licogarment.com; jennifer@licogarment.com','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('LT','LT',1,'tracy.liang@lawsgroup.com; ling.li@lawsgroup.com','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('SNK','SNK',1,'purchasinghk@sunnyknitting.com.hk','stella.zhong@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('EG','EG',1,'nkpr@netvigator.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('KPF','KPF',1,'helen@keepprofit.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('ST','ST',1,'jyy@shentai-fabric.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('LPS','LPS',1,'mankiu@lapsun-straw.com.hk','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('TJ','TJ',1,'sales1@tzjchina.cn','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('TK','TK',1,'carson@takabelts.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('BS','BS',1,'sally@ldbelt.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('TG','TG',1,'Flora@tengun.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('SUN','SUN',1,'catherinelai@sunex.com.hk','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('HSU','HSU',1,'angela@mail.hsuhung.com.tw','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('CS','CS',1,'polly@china-strong.net','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('RT','RT',1,'coco.tang@radartop.com.cn','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('SXL','SXL',1,'woven@jiuyatrade.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('WTC','WTC',1,'parkland@hkstar.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('WPS','WPS',1,'','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('AL','AL',1,'','');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('BJ','BJ',1,'karen@bjf.com.hk','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('HKU','HKU',1,'brandon@hkumbrella.com.hk; shipping@hkumbrella.com.hk; yuanmeng@szgangsan.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('SNY','SNY',1,'sunny@sunnytreasure.com.hk','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('KL','KL',1,'angela@kalai-fashion.com; sally@kalai-fashion.com','tiffany.zou@r-pac.com.cn');
+insert into bossini_vendor (vendor_code,vendor_name,active,feedback_email,ae_email) values('YK','YK',1,'lindaoyiko@yiko.com','tiffany.zou@r-pac.com.cn');
+
+-- add bill to
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(19,'東莞四海時裝有限公司','東莞市,虎門鎮,虎門寨第三工業區四幢二樓','胡麗紅','0769-85126653 ext:123','RMB','需要','方瑪莉',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(20,'東莞柏德來制衣有限公司','廣東省東莞市萬江區石美上蓬廟工業區','仁','0769-22273940','RMB','需要','黄生',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(21,'井田貿易有限公司','Flat 516 5/F Ming Sang Ind bldg 19 hing Yip Kwun Tong','冼春秀','(852) 2724 2208','HKD','不适用','马丽婵',0,'单价包括中山区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(22,'兆輝時裝有限公司','香港, 九龍, 荔枝角, 永康街51-53號, 時穎中心4樓4室','Toby','852- 23677855','HKD','不适用','黄先生',0,'单价包括香港区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(22,'兆輝時裝有限公司','香港, 九龍, 荔枝角, 永康街51-53號, 時穎中心4樓4室','Toby','852- 23677855','HKD','不适用','黄先生',0,'单价包括中山区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(23,'随后通知','','','','','','',0,'');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(24,'东莞市新远宏制衣有限公司','广东省东莞市虎门镇村头社区禾屋岗工业区锦绣路1号','谢来刚','0769-82889188','RMB','需要','李艳明',0,'');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(25,'广州市增城东林制衣厂','广州市增城市荔城镇新桥路48号','Carol','020-82752612','RMB','需要','李艳婷/林錦芳',0,'');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(26,'佛山市顺德区利晋制衣有限公司','佛山市顺德区教羊额工业区泰安路70号','阿丰、姜丽','0757-27720080 / 27722393','RMB','需要','苏小姐',0,'');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(27,'骏达(清远)制衣有限公司','广东省清远市清城区东城街办平安二街99号','Yoko','0763 3900555 ext 123','RMB','需要','冯玉嫦',0,'');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(28,'東莞市茶山朗烽製衣廠','東莞市茶山鎮孫屋工業區','Vicky','769-24120809','RMB','需要','',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(29,'东莞市茶山泽益制衣厂','广东省东莞市茶山镇吉街工业区第五号厂房','严小姐','0769-86487786','RMB','需要','陈玉敏',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(30,'随后通知','','','','','','',0,'');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(31,'威柏服裝(深圳)有限公司','深圳市寶安區觀瀾街道福民社區福前路盛景工業圓A棟','黃敏','0755-33263233','RMB','需要','張紅芳',0,'单价包括深圳区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(32,'中山利安泰来制衣有限公司','中山市横栏镇茂辉工业区乐丰六路11号','Connie / Katherine','852-23916826','RMB','需要','陳湘贇',0,'单价包括中山区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(33,'随后通知','','Ling','','','','',0,'');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(34,'柏丽雅实业(深圳)有限公司','深圳市龙岗区爱联龙腾工业城龙腾三路六号','龙戎','0755-2898 0288,2898,0301','RMB','需要','韦小姐',0,'单价包括深圳区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(35,'永得利國際企業有限公司 Evergain Int''l Ents. Ltd','九龍土瓜灣旭日街11號志聯昌工業大廈4字樓B2室','Irene','852-23655223','HKD','不適用','Irene',0,'单价包括香港区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(36,'協勤實業有限公司 Keep Profit','惠州市惠城區馬安鎮新樂工業區新樂4路丁草埔','Helen','852 2416 6171','HKD','不適用','吳奇東',0,'快递运费到付');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(37,'厦门绅泰工贸有限公司 XIAMEN SHENTAI INDUSTRIAL & TRADE CO.,LTD','厦门市同安区新民镇乌涂商业街绅泰工贸','Joanna','592-5900672','RMB','需要','Joanna',0,'快递运费到付');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(38,'東莞市塘厦日俊草具制品廠 Lap Sun Straw Products Mfy. Ltd.','東莞市塘厦鎮田心永發工業城','Ms. So','852 2341 5319','RMB','需要','蔣如愛',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(39,'天之娇（厦门）皮革制品有限公司','福建省厦门市同安区集贤路1189号厂房4楼','Noctis','592 7891788','RMB','需要','陳景責',0,'快递运费到付');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(40,'東莞市 長安 特大皮具製品廠','九龍旺角塘尾道64號, 龍駒企業大廈6樓C室','陳百成','852 2345 5337','HKD','不適用','陳百成',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(41,'東莞市中堂必勝腰帶廠 Dongguan Bisheng Belt Factoruy','東莞市中堂鎮北潢路吴家涌第二工業區','劉梅紅','0769-88110249','RMB','需要','李紅萍',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(42,'惠州富士织带皮具厂有限公司','广东省惠州市小金口镇柏岗路北59号','Flora Ho','0752-2820129','RMB','需要','',0,'快递运费到付');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(43,'鍵明皮革制品有限公司','中國廣東省東莞市虎門鎮樹田管理區','Catherine','852-23012368','RMB','需要','李惠萍',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(44,'如翔織造(深圳)有限公司','深圳市寶安區沙井街道新二工業區庄村路庄村市場第四棟','Angela','886-4-7572345','RMB','需要','游嘉惠',0,'单价包括深圳区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(45,'中強服飾制品厂 China Strong','廣東省東莞巿黃江鎮雞啼崗金錢嶺工業區五街二號','Polly Chan','(852) 3426 8482','RMB','需要','李靜',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(46,'羅定市星銘綉制衣帽袋廠 (香港公司名 : 星銘股份有限公司 Radar Top Ltd)','深圳市龍崗區坪地鎮坪西村東興路4號','CoCo Tang','8994 2757(1016)','RMB','需要','張萍梅',0,'单价包括深圳区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(47,'绍兴市九娅贸易有限公司 Shao Xing','绍兴市胜利东路汇金大厦12B-A','Jennifer','0575-8860 0737','RMB','需要','',0,'快递运费到付');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(48,'東莞百隆織祙有限公司','東莞市風崗鎮雁田南園路二巷2號','Fion','852-24163631','RMB','需要','何進福',0,'单价包括东莞区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(49,'中山華寶織襪廠有限公司','廣東省中山市三鄉鎮平東工業區興隆路','Vivian','0760-86360235','RMB','需要','劉玉娘',0,'单价包括中山区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(50,'随后通知','','','','','','',0,'');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(51,'寶豐實業發展有限公司','Unit No.4B 3/F Wah Shing CTR 11 Shing Yip ST Kwun Tong KL','Karen','852-23417658','HKD','不適用','Ms. Florence Lam',0,'外省送货运费到付');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(51,'寶豐實業發展有限公司','Unit No.4B 3/F Wah Shing CTR 11 Shing Yip ST Kwun Tong KL','Karen','852-23417658','HKD','不適用','Ms. Florence Lam',0,'单价包括深圳区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(52,'香港洋傘有限公司','香港上環文咸西街18號盤谷銀行大廈23樓全層','Evans','852-2890 6630','HKD','不適用','Agnes',0,'单价包括香港区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(52,'香港洋傘有限公司','香港上環文咸西街18號盤谷銀行大廈23樓全層','Evans','852-2890 6630','HKD','不適用','Agnes',0,'单价包括深圳区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(52,'深圳港伞伞业有限公司','深圳市龙岗区坪地镇坪东社区富坪路华厦园A1栋2楼','袁梦小姐','0755-8407 2288','RMB','需要','廖小姐',0,'单价包括深圳区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(53,'寶陽國際有限公司','香港九龍觀塘興業街21號明生工業大廈5樓529室','Sunny','(852)2769 6036','HKD','不需要','Jenny Chan',0,'单价包括深圳香港送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(54,'中山兆康制帽手袜有限公司','中山市三乡镇雍陌村雍泉路12号','Sally','0760-86689881-612','RMB','需要','韩丽玉',0,'单价包括中山区域送货');
+insert into bossini_vendor_billto_info (vendor_id,bill_to,address,contact,tel,currency,need_va_t,account,flag,haulage) values(55,'东莞市奥尔高工贸有限公司','东莞市石排镇福隆第二工业区七路','Linda','0769 8652 0856','RMB','需要','陳燕玲',0,'单价包括东莞区域送货');
+
+
+-- add ship to
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(19,'東莞四海時裝有限公司','東莞市,虎門鎮,虎門寨第三工業區四幢二樓','胡麗紅','0769-85126653','dgwsh@dgfourseas.net; dgwlh@dgfourseas.net','胡麗紅','0769-85126653','東莞市,虎門鎮,虎門寨第三工業區四幢二樓',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(20,'東莞柏德來制衣有限公司','廣東省東莞市萬江區石美上蓬廟工業區','強 / 香','0769-22273940','sara@paklayton.com.hk; ares@paklayton.com.hk; xia@paklayton.com.hk','強 / 香','0769-22273940','廣東省東莞市萬江區石美上蓬廟工業區',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(21,'中山市鴻興服裝廠有限公司','中山市大涌镇小洋工业村第3幢','冼春秀','0760-86232183:18988571282','xiu@dchongxing.com','冼春秀','0760-86232183:18988571282','中山市大涌镇小洋工业村第3幢',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(22,'兆輝時裝有限公司','香港, 九龍, 荔枝角, 永康街51-53號, 時穎中心4樓4室','黃先生','852- 23677855','toby@candv.com.hk','黃先生','852- 23677855','香港, 九龍, 荔枝角, 永康街51-53號, 時穎中心4樓4室',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(22,'廣益製衣廠','中山市, 沙溪鎮, 寶珠東路73號','徐利敏','760-87399801','toby@candv.com.hk','徐利敏','760-87399801','中山市, 沙溪鎮, 寶珠東路73號',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(22,'精億製衣廠','中山市, 沙溪鎮, 寶珠西路第2工業中心','雪 / 冕','760-86220902','toby@candv.com.hk','雪 / 冕','760-86220902','中山市, 沙溪鎮, 寶珠西路第2工業中心',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(23,'随后通知','','','','','','','',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(24,'东莞市新远宏制衣有限公司','广东省东莞市虎门镇村头社区禾屋岗工业区锦绣路1号','谢来刚','0769-82889188-835','xiewengang@xyhzy.com','谢来刚','0769-82889188-835','广东省东莞市虎门镇村头社区禾屋岗工业区锦绣路1号',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(25,'广州市增城东林制衣厂','广州市增城市荔城镇新桥路48号','琴','020-82752612','carol@endeavour.com.hk','李艳婷/林錦芳','020-82752612','广州市增城东林制衣厂',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(26,'佛山市顺德区利晋制衣有限公司','佛山市顺德区教羊额工业区泰安路70号','阿丰、姜丽','0757-27720080、27722393','hefyhe@126.com; jiangli2009@21cn.com','阿丰、姜丽','0757-27720080、27722393','佛山市顺德区教羊额工业区泰安路70号',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(27,'骏达(清远)制衣有限公司','广东省清远市清城区东城街办平安二街99号','官思慧 / 梁国健','0763-3900555','yoko@chuntat.com.cn','官思慧 梁国健','0763-3900555','广东省清远市清城区东城街办平安二街99号',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(28,'東莞市茶山朗烽製衣廠','東莞市茶山鎮孫屋工業區','潘健智','769-86644936','vicky@longest.com.hk','潘健智','769-86644936','東莞市茶山鎮孫屋工業區',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(29,'东莞市茶山泽益制衣厂','广东省东莞市茶山镇吉街工业区第五号厂房','胡非常','0769-86487786','ling20001203@126.com','胡非常','0769-86487786','广东省东莞市茶山镇吉街工业区第五号厂房',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(30,'随后通知','','','','','','','',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(31,'威柏服裝(深圳)有限公司','深圳市寶安區觀瀾街道福民社區福前路盛景工業圓A棟','張小姣','0755-28010384','sking@greatyear-gmt.com','張小姣','0755-33263281','深圳市寶安區觀瀾街道福民社區福前路盛景工業圓A棟',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(32,'中山利安泰来制衣有限公司','中山市横栏镇茂辉工业区乐丰六路11号','覃建梅','0760-87683515','connie@licogarment.com; jennifer@licogarment.com','覃建梅','0760-87683515','中山市横栏镇茂辉工业区乐丰六路11号',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(33,'随后通知','','','','tracy.liang@lawsgroup.com; ling.li@lawsgroup.com','','','',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(34,'柏丽雅实业(深圳)有限公司','深圳市龙岗区爱联龙腾工业城龙腾三路六号','龙戎','0755-28980288,0755-2898,0301','purchasinghk@sunnyknitting.com.hk','龙戎','0755-28980288,0755-2898,0301','深圳市龙岗区爱联龙腾工业城龙腾三路六号',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(35,'永得利國際企業有限公司','九龍土瓜灣旭日街11號志聯昌工業大廈4字樓B2室','Irene','852-23655223','nkpr@netvigator.com','Irene','852-23655223','九龍土瓜灣旭日街11號志聯昌工業大廈4字樓B2室',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(36,'協勤實業有限公司','惠州市惠城區馬安鎮新樂工業區新樂4路丁草埔','廖海林','752-2261826','helen@keepprofit.com','廖海林','752-2261826','惠州市惠城區馬安鎮新樂工業區新樂4路丁草埔',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(37,'厦门绅泰工贸有限公司','厦门市同安区新民镇乌涂商业街绅泰工贸','Joanna','0592-5900672','jyy@shentai-fabric.com','Joanna','592-5900672','厦门市同安区新民镇乌涂商业街绅泰工贸',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(38,'東莞市塘厦日俊草具制品廠','東莞市塘厦鎮田心永發工業城','胡秧秧小姐','0769-87889861','mankiu@lapsun-straw.com.hk','胡秧秧小姐','0769-87889861','東莞市塘厦鎮田心永發工業城',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(39,'天之娇（厦门）皮革制品有限公司','福建省厦门市同安区集贤路1189号厂房4楼','卢伯承','0592 7891788','sales1@tzjchina.cn','卢伯承','0592 7891788','福建省厦门市同安区集贤路1189号厂房4楼',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(40,'東莞市 長安 特大皮具製品廠','廣東省 東莞市 長安鎮 錦廈村 一龍路 河西工業區 第二棟','周小姐','0769-85531965','carson@takabelts.com','周小姐','0769-85531965','廣東省東莞市長安鎮錦廈村一龍路河西工業區第二棟',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(41,'必勝腰帶廠','東莞市中堂鎮北潢路吴家涌第二工業區','李紅萍','0769-88110249','sally@ldbelt.com','李紅萍','0769-88110249','東莞市中堂鎮北潢路吴家涌第二工業區',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(42,'惠州富士织带皮具厂有限公司','广东省惠州市小金口镇柏岗路北59号','缪日昌','0752-2820129','Flora@tengun.com','缪日昌','0752-2820129','广东省惠州市小金口镇柏岗路北59号',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(43,'鍵明皮革制品有限公司','中國廣東省東莞市虎門鎮樹田管理區','龍官君 / 曹必玉','769-85158988','catherinelai@sunex.com.hk','龍官君 / 曹必玉','769-85158988','中國廣東省東莞市虎門鎮樹田管理區',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(44,'如翔織造(深圳)有限公司','深圳市寶安區沙井街道新二工業區庄村路庄村市場第四棟','陳東旭 先生 / 陳卉 小姐','755-27267585','angela@mail.hsuhung.com.tw','陳東旭 先生 / 陳卉 小姐','755-27267585','深圳市寶安區沙井街道新二工業區庄村路庄村市場第四棟',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(45,'中強服飾制品厂','廣東省東莞巿黃江鎮雞啼崗金錢嶺工業區五街二號','李靜 / 吳再喜','(769) 8233 0328','polly@china-strong.net','李靜 / 吳再喜','(769) 8233 0328','廣東省東莞巿黃江鎮雞啼崗金錢嶺工業區五街二號',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(46,'星銘股份有限公司 Radar Top Ltd','深圳市龍崗區坪地鎮坪西村東興路4號','黎海源 / 鄧海梅','0755-89942757','coco.tang@radartop.com.cn','CoCo Tang','8994 2757(1016)','深圳市龍崗區坪地鎮坪西村東興路4號',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(47,'绍兴市九娅贸易有限公司','绍兴市胜利东路汇金大厦12B-A','张玲吉 / 小宋','0575-88600737','woven@jiuyatrade.com','Jennifer','0575-88600737','绍兴市胜利东路汇金大厦12B-A',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(48,'東莞百隆織祙有限公司','東莞市風崗鎮雁田南園路二巷2號','梁瑯','0769-87773380','parkland@hkstar.com','梁瑯','0769-87773380','東莞市風崗鎮雁田南園路二巷2號',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(49,'中山華寶織襪廠有限公司','廣東省中山市三鄉鎮平東工業區興隆路','王小姐','0760-86360200','','王小姐','0760-86360200','廣東省中山市三鄉鎮平東工業區興隆路',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(50,'随后通知','','','','','','','',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(51,'荊州億諾鞋業有限公司','湖北省荊州市北京東路139號','郭劉洋','0716 8322 556','karen@bjf.com.hk','荊州億諾鞋業有限公司','0716 8322 556','湖北省荊州市北京東路139號',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(51,'杭州依儂貿易有限公司','杭州市余杭區臨平世紀大道3-7號美業大廈1207-1208室','小林','0571-86325199','karen@bjf.com.hk','杭州依儂貿易有限公司','0571-86325199','杭州市余杭區臨平世紀大道3-7號美業大廈1207-1208室',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(51,'深圳嘉力恒公司','廣東省深圳市羅湖區深南東路1086號集浩大廈A2301','小丁','755-25547883','karen@bjf.com.hk','深圳嘉力恒公司','755-25547883','廣東省深圳市羅湖區深南東路1086號集浩大廈A2301',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(52,'香港洋傘有限公司','香港上環文咸西街18號盤谷銀行大廈23樓全層','吳小姐','852-2890 6630','brandon@hkumbrella.com.hk; shipping@hkumbrella.com.hk','吳小姐','852-2890 6630','香港上環文咸西街18號盤谷銀行大廈23樓全層',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(52,'香港洋傘有限公司','深圳市龍崗區坪地街道坪東社區富坪路華廈園A1棟二樓','袁梦小姐','0755-8407 2288','','袁梦小姐','0755-8407 2288','深圳市龍崗區坪地街道坪東社區富坪路華廈園A1棟二樓',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(52,'深圳港伞伞业有限公司','深圳市龙岗区坪地镇坪东社区富坪路华厦园A1栋2楼','袁梦小姐','0755-8407 2288','yuanmeng@szgangsan.com; brandon@hkumbrella.com.hk','袁梦小姐','0755-8407 2288','深圳市龙岗区坪地镇坪东社区富坪路华厦园A1栋2楼',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(53,'寶陽國際有限公司','香港九龍觀塘興業街21號明生工業大廈5樓529室','柯生/ 廖小姐','(852)2769 6036','sunny@sunnytreasure.com.hk','柯生/ 廖小姐','(852)2769 6036','香港九龍觀塘興業街21號明生工業大廈5樓529室',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(54,'中山兆康制帽手袜有限公司','中山市三乡镇雍陌村雍泉路12号','蘇燕清','0760-86689881','angela@kalai-fashion.com;sally@kalai-fashion.com','蘇燕清','0760-86689881','中山市三乡镇雍陌村雍泉路12号',0);
+insert into bossini_vendor_shipto_info (vendor_id,ship_to,address,contact,tel,email,sample_receiver,sample_receiver_tel,sample_send_address,flag) values(55,'东莞市奥尔高工贸有限公司','东莞市石排镇福隆第二工业区七路','Linda','0769 8652 0856','lindaoyiko@yiko.com','Linda','0769 8652 0856','东莞市奥尔高工贸有限公司',0);
+
+
+-- add size mapping
+update bossini_size_mapping set line='BOSSINI LADIES' where line='BOSSINI WOMAN';
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('XS','160/80Y','S','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('S','165/84Y','S','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('M','170/88Y','S','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('L','175/92Y','S','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('XL','175/92A','S','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('XXL','175/96A','S','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('XS','160/60Y','X','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('S','165/64Y','X','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('M','170/68Y','X','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('L','175/72Y','X','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('XL','175/76A','X','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('XXL','175/80A','X','BOSSINI LADIES','KNIT',0);
+insert into bossini_size_mapping (size,measure,type,line,weave,status) values('XXL','175/80','X','BOSSINI LADIES','KNIT',0);
+
+
+-- add user into the vendor group
+insert into user_group(group_id,user_id) values (30,103);
+insert into user_group(group_id,user_id) values (31,104);
+insert into user_group(group_id,user_id) values (32,91);
+insert into user_group(group_id,user_id) values (33,92);
+insert into user_group(group_id,user_id) values (35,93);
+insert into user_group(group_id,user_id) values (36,94);
+insert into user_group(group_id,user_id) values (37,95);
+insert into user_group(group_id,user_id) values (38,96);
+insert into user_group(group_id,user_id) values (39,97);
+insert into user_group(group_id,user_id) values (40,98);
+insert into user_group(group_id,user_id) values (42,99);
+insert into user_group(group_id,user_id) values (43,100);
+insert into user_group(group_id,user_id) values (44,101);
+insert into user_group(group_id,user_id) values (45,102);
+insert into user_group(group_id,user_id) values (46,105);
+insert into user_group(group_id,user_id) values (47,106);
+insert into user_group(group_id,user_id) values (49,107);
+insert into user_group(group_id,user_id) values (51,109);
+insert into user_group(group_id,user_id) values (52,110);
+insert into user_group(group_id,user_id) values (54,111);
+insert into user_group(group_id,user_id) values (55,112);
+insert into user_group(group_id,user_id) values (56,113);
+insert into user_group(group_id,user_id) values (57,114);
+insert into user_group(group_id,user_id) values (58,115);
+insert into user_group(group_id,user_id) values (59,116);
+insert into user_group(group_id,user_id) values (60,117);
+insert into user_group(group_id,user_id) values (62,118);
+insert into user_group(group_id,user_id) values (63,119);
+insert into user_group(group_id,user_id) values (64,120);
+insert into user_group(group_id,user_id) values (65,121);
+insert into user_group(group_id,user_id) values (66,108);
+insert into user_group(group_id,user_id) values (50,122);
+insert into user_group(group_id,user_id) values (48,123);
+insert into user_group(group_id,user_id) values (53,124);
+
+
+
+-- add the new style care lable
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,component,display,img,grouping) values('01PL690408','个',0.073000,0.083000,0,'CO','Nylon','01PL690408 (越南制)','01PL690408_v',1);
+insert into bossini_item (item_code,unit,rmb_price,hk_price,active,item_type,component,display,img,grouping) values('01PL690408AA','个',0.073000,0.083000,0,'CO','Satin','01PL690408AA (越南制)','01PL690408AA_v',1);
+update bossini_item set display = '01PL690408 (中国制)' where id = 78;
+update bossini_item set display = '01PL690408AA (中国制)' where id = 87;
+
+-- update the wrong price for item 06PL749109
+UPDATE bossini_item SET hk_price=0.2833 ,rmb_price = 0.2456  where item_code ILIKE '06PL749109%';
+
+
+-- update the user email address for LWF
+update bossini_vendor set feedback_email = 'ice.li@king-fung.com;jimmy.li@king-fung.com;minmin.pan@king-fung.com;jessica.zhang@king-fung.com' where vendor_code = 'LWF';
